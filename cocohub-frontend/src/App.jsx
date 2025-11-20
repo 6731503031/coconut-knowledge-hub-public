@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { useAuth } from './context/AuthContext';
 
 import Header from './components/Header';
-import SideMenu from './components/Sidemenu';
+import SideMenu from './components/SideMenu';
 import HomePage from './pages/HomePage';
 import ProductCatalog from './pages/ProductCatalog';
 import ProductDetail from './pages/ProductDetail';
