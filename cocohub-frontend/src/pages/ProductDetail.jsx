@@ -19,7 +19,7 @@ function ProductDetail() {
   const currentLang = i18n.language;
 
   useEffect(() => {
-    const apiUrl = `http://localhost:8080/api/products/${id}?lang=${currentLang}`;
+    const apiUrl = `https://coconut-knowledge-hub-public.onrender.com/api/products/${id}?lang=${currentLang}`;
     axios.get(apiUrl) 
       .then(response => {
         setProduct(response.data); 

@@ -47,7 +47,7 @@ function ArticleList() {
     if (debouncedSearchTerm) {
       params.append('search', debouncedSearchTerm);
     }
-    const apiUrl = `http://localhost:8080/api/articles?${params.toString()}`;
+    const apiUrl = `https://coconut-knowledge-hub-public.onrender.com/api/articles?${params.toString()}`;
 
     axios.get(apiUrl)
       .then(response => {

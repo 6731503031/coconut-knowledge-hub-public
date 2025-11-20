@@ -40,7 +40,7 @@ function VarietyDetail() {
     setLoading(true);
     setError(null);
 
-    const apiUrl = `http://localhost:8080/api/varieties/${id}?lang=${currentLang}`;
+    const apiUrl = `https://coconut-knowledge-hub-public.onrender.com/api/varieties/${id}?lang=${currentLang}`;
     axios.get(apiUrl)
       .then(response => {
         setVariety(response.data);

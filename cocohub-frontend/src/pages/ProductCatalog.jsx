@@ -34,7 +34,7 @@ function ProductCatalog() {
       params.append('search', searchTerm);
     }
 
-    const apiUrl = `http://localhost:8080/api/products?${params.toString()}`;
+    const apiUrl = `https://coconut-knowledge-hub-public.onrender.com/api/products?${params.toString()}`;
 
     axios.get(apiUrl)
       .then(response => {

@@ -18,7 +18,7 @@ function SearchResultPage() {
             setLoading(true); // (ESLint เตือน...
             setError(null); 
             
-            const apiUrl = `http://localhost:8080/api/products?search=${query}&lang=${lang}`;
+            const apiUrl = `https://coconut-knowledge-hub-public.onrender.com/api/products?search=${query}&lang=${lang}`;
             
             axios.get(apiUrl)
                 .then(response => {

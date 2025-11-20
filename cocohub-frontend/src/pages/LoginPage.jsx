@@ -25,7 +25,7 @@ function LoginPage() {
     setLoading(true);
     setError(null);
 
-    axios.post('http://localhost:8080/api/auth/login', { email, password })
+    axios.post('https://coconut-knowledge-hub-public.onrender.com/api/auth/login', { email, password })
       .then(response => {
         setLoading(false);
         const { jwtToken, email: userEmail, userType } = response.data;

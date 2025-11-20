@@ -38,7 +38,7 @@ function MarketPricePage() {
     setLoading(true);
     setError(null);
 
-    const apiUrl = `http://localhost:8080/api/prices?startDate=${start}&endDate=${end}`;
+    const apiUrl = `https://coconut-knowledge-hub-public.onrender.com/api/prices?startDate=${start}&endDate=${end}`;
 
     axios.get(apiUrl)
       .then(response => {

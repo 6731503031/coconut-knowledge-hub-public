@@ -32,7 +32,7 @@ function RegisterPage() {
     setLoading(true);
     setError(null);
 
-    axios.post('http://localhost:8080/api/auth/register', formData)
+    axios.post('https://coconut-knowledge-hub-public.onrender.com/api/auth/register', formData)
       .then(() => {
         setLoading(false);
         alert('สมัครสมาชิกสำเร็จ! กรุณาเข้าสู่ระบบ');

@@ -24,7 +24,7 @@ function PriceTracker() {
         setLoading(true);
         setError(null);
 
-        const apiUrl = `http://localhost:8080/api/prices?start_date=${start}&end_date=${end}`;
+        const apiUrl = `https://coconut-knowledge-hub-public.onrender.com/api/prices?start_date=${start}&end_date=${end}`;
         
         axios.get(apiUrl)
             .then(response => {

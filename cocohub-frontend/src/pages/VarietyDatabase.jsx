@@ -44,7 +44,7 @@ function VarietyDatabase() {
     if (debouncedSearchTerm) {
       params.append('search', debouncedSearchTerm);
     }
-    const apiUrl = `http://localhost:8080/api/varieties?${params.toString()}`;
+    const apiUrl = `https://coconut-knowledge-hub-public.onrender.com/api/varieties?${params.toString()}`;
 
     axios.get(apiUrl)
       .then(response => {
