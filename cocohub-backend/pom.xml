@@ -94,17 +94,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
     </dependencies>
     <build>
         <plugins>
-            <!-- **การแก้ไขที่ 1: การกำหนด Spring Boot Maven Plugin และ Main Class** -->
-            <!-- 
-            * ไม่ต้องระบุเวอร์ชันของ spring-boot-maven-plugin เพราะ Parent (3.5.7) จะจัดการให้
-            * ระบุ mainClass อย่างชัดเจนเพื่อหลีกเลี่ยงข้อผิดพลาด "Unable to find main class" 
-            -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <!-- **สำคัญ:** ต้องตรงกับชื่อ package และคลาสหลักของคุณ -->
-                    <mainClass>com.cocohub.cocohubbackend.CocohubBackendApplication</mainClass>
+                    <mainClass>com.cocohub.cocohub_backend.CocohubBackendApplication</mainClass>
                 </configuration>
             </plugin>
             <plugin>
