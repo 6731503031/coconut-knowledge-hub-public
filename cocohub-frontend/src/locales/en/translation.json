@@ -1,0 +1,82 @@
+{
+  "navbar": {
+    "logo": "🥥 COCOHUB",
+    "catalog": "Catalog",
+    "varieties": "Varieties",
+    "articles": "Articles",
+    "prices": "Prices",
+    "dashboard_entrepreneur": "My Dashboard",
+    "dashboard_admin": "Admin",
+    "hi": "Hi, {{email}}",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register"
+  },
+  "footer": {
+    "copyright": "Copyright © CocoHub"
+  },
+  "pages": {
+    "login": {
+      "title": "Login",
+      "email_label": "Email Address",
+      "password_label": "Password",
+      "button_loading": "Logging in...",
+      "button_submit": "Login",
+      "error_401": "Invalid email or password",
+      "error_other": "Login failed",
+      "link_register": "Don't have an account? Register"
+    },
+    "register": {
+      "title": "Register",
+      "display_name_label": "Display Name",
+      "phone_label": "Phone Number",
+      "province_label": "Province",
+      "role_label": "Register as",
+      "role_farmer": "Farmer",
+      "role_entrepreneur": "Entrepreneur",
+      "button_loading": "Registering...",
+      "button_submit": "Register",
+      "success_alert": "Registration successful! Please login.",
+      "error_email_in_use": "Error: Email is already in use!",
+      "error_other": "An error occurred during registration.",
+      "link_login": "Already have an account? Login"
+    },
+    "admin_dashboard": {
+      "title": "Admin Dashboard",
+      "subtitle": "User Management",
+      "header_email": "Email",
+      "header_name": "Display Name",
+      "header_role": "User Type (Role)",
+      "header_status": "Status",
+      "header_actions": "Actions",
+      "action_active": "Set Active",
+      "action_suspend": "Set Suspended",
+      "action_delete": "Delete User",
+      "confirm_delete": "Are you sure you want to permanently delete this user?",
+      "alert_status_success": "User status updated to {{status}}",
+      "alert_status_error": "Error updating status",
+      "alert_delete_success": "User deleted successfully.",
+      "alert_delete_error": "Error deleting user",
+      "error_loading": "Could not load users. (Are you an Admin?)"
+    }
+    
+  },
+  "common": {
+      "fetch": "Fetch Data",
+      "date": "Date"
+    },
+    "price": {
+      "marketPriceTracker": "Coconut Market Price Tracker",
+      "demoTitle": "Price History (Demo: {{days}} days)",
+      "description": "Historical price data for different regions in Thailand.",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "fetchError": "Failed to fetch price data.",
+      "noData": "No price data found for the selected date range.",
+      "region": {
+        "central": "Central Region",
+        "northeast": "Northeast Region",
+        "south": "South Region"
+      }
+    }
+}

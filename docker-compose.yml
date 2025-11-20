@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  # 1. กล่องสำหรับ "โกดัง" (MySQL)
+  db:
+    image: mysql:8
+    container_name: mysql-cocohub  # ตั้งชื่อให้จำง่าย (เหมือนใน Codespaces)
+    restart: unless-stopped
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes" # ⬅️ ตรงกับ application.properties
+      MYSQL_DATABASE: "cocohub_db"    # ⬅️ สร้าง DB นี้รอ
+    ports:
+      - "3306:3306" # ⬅️ เชื่อม localhost:3306 ของเครื่องคุณ
+    volumes:
+      - mysql_data:/var/lib/mysql
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+
+  # 2. (Optional) กล่องสำหรับ "ออฟฟิศผู้จัดการ" (phpMyAdmin)
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma-cocohub
+    restart: unless-stopped
+    environment:
+      PMA_HOST: "db"  # ⬅️ บอก pma ให้เชื่อมไปที่ service "db"
+      PMA_PORT: 3306
+    ports:
+      - "8081:80" # ⬅️ เปิด phpMyAdmin ที่ http://localhost:8081
+
+volumes:
+  mysql_data:
+ 
